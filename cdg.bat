@@ -1,0 +1,1 @@
+cd %GFHOME%/glassfish

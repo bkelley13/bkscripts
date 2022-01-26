@@ -1,0 +1,1 @@
+yo oraclejet:hybrid --help

@@ -1,0 +1,1 @@
+ojet create fifnov8 --hybrid --platform=android --appid=com.weebly.bkqa.fifnov6 --template=http://den00pwq.us.oracle.com:8080/hudson/job/OJET_V4.1.0/lastSuccessfulBuild/artifact/apps/components/public_html/public_samples/nojet/FixItFast.zip

@@ -1,0 +1,18 @@
+{
+    "android": {
+        "debug": {
+            "keystore": "./bk-release-key.keystore",
+            "storePassword": "audrey1",
+            "alias": "bkkey1",
+            "password" : "audrey1",
+            "keystoreType": ""
+        },
+        "release": {
+            "keystore": "./bk-release-key.keystore",
+            "storePassword": "audrey1",
+            "alias": "bkkey1",
+            "password" : "audrey1",
+            "keystoreType": ""
+        }
+    }
+}
