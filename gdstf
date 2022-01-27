@@ -1,0 +1,2 @@
+$GFHOME/bin/asadmin create-jdbc-connection-pool --datasourceclassname oracle.jdbc.pool.OracleDataSource --restype javax.sql.XADataSource --property user=tedflix:password=tedflix:url=jdbc\\:oracle\\:thin\\:@slc00ali.us.oracle.com\\:1521\\:adt1116 --target=server OracleTFDSPool 
+$GFHOME/bin/asadmin create-jdbc-resource --connectionpoolid OracleTFDSPool jdbc/tedflixDS
