@@ -1,0 +1,2 @@
+cd $JETHOME/build/tools/jetty-distribution
+java -jar start.jar --ini=$JETHOME/built/test/jetty/start.ini -Djetty.port=7101 -DSTOP.PORT=8079 -DSTOP.KEY=stop_jetty

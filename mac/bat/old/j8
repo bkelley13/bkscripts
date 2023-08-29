@@ -1,0 +1,2 @@
+rm -rf ~/bat/gojdk
+ln -s ~/bat/gojdk8 ~/bat/gojdk

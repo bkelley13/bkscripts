@@ -1,0 +1,3 @@
+npm install node-gyp  --build-from-source
+npm install node-pre-gyp@latest --verbose --build-from-source
+npm install node-sass  --build-from-source

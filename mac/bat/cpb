@@ -1,0 +1,2 @@
+#!/bin/ksh +x
+cp $1 $JETHOME/sandbox/bokelle/bat/mac

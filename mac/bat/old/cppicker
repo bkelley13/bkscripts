@@ -1,0 +1,2 @@
+cp pickersrc/src/index.html $1/src/
+cp pickersrc/src/js/main.js $1/src/js/

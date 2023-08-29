@@ -1,0 +1,25 @@
+export JETBRANCH=$1
+export JETVER=${JETBRANCH}
+export JETHOME=$SCRATCHHOME/${JETBRANCH}
+alias cja="cd ${JETHOME}/rt/src/test/webdriver/apps"
+alias cjs="cd ${JETHOME}/build/scripts"
+alias cjg="cd ${JETHOME}/build/scripts/grunt"
+alias cpd="cp ${JETHOME}/build/scripts/grunt/dev_properties_mac.json ${JETHOME}/build/scripts/grunt/my_dev_properties.json"
+alias cdr="cd ${JETHOME}"
+alias cjt="cd ${JETHOME}/rt/src/test/webdriver/src/oj/tests"
+alias cje="cd ${JETHOME}/dt/extensions/vscode/oracle-jet-core"
+alias cjp="cd ${JETHOME}/packages/oraclejet-preact"
+alias cjw="cd ${JETHOME}/rt/src/test/webdriverjs"
+alias cjh="cd ${JETHOME}/rt/src/test/karma-mocha/components/ojdataprovider"
+alias cjwb="cd ${JETHOME}/built/test/webdriverjs"
+alias cjb="cd ${JETHOME}/built/vscode/extensions/oracle-jet-core/"
+alias cjsb="cd ${JETHOME}/sandbox/bokelle"
+alias cjsa="cd $JETHOME/sandbox/Amy/newCompModel/js/components"
+alias cjc="cd $JETHOME/rt/apps/components/public_html/cookbook/"
+alias cjcb="cd $JETHOME/built/apps/components/public_html/js/jet-composites"
+alias cjr="cd $JETHOME/rt/apps/components/public_html/cookbook/appLayout/redwood/card"
+alias cjrb="cd $JETHOME/built/apps/components/public_html/content/redwood-card"
+alias cjcc="cd $JETHOME/rt/apps/components/public_html/js/jet-composites"
+alias cjccb="cd $JETHOME/built/apps/components/public_html/js/jet-composites"
+alias cjo="cd $JETHOME/rt/src/main/javascript/oracle/oj/"
+

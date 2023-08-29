@@ -1,0 +1,2 @@
+sudo /etc/rc.d/init.d/oracle-xe start
+

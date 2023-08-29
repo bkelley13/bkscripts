@@ -1,0 +1,9 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Bob Kelley
+	email = bob.kelley@oracle.com
+# Please adapt and uncomment the following lines:
+#	name = Bob Kelley
+#	email = bob.kelley@oracle.com
+[pull]
+	ff = only

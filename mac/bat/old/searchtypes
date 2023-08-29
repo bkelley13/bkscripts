@@ -1,0 +1,2 @@
+cd $JETHOME/built/metadata/components
+grep -h "type\": " * | sed 's/^[[:space:]]*//' | sed 's/,$//' | grep -v core | sort | uniq -c | sort -r

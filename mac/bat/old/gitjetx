@@ -1,0 +1,4 @@
+git clone https://bob.kelley%40oracle.com@alm.oraclecorp.com/uitech/s/uitech_jet_15414/scm/jet.git $SCRATCHDIR/jetx
+cd $SCRATCHDIR/jetx
+npm install
+grunt pull pull-app

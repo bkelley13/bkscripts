@@ -1,0 +1,7 @@
+echo Now Hybrid app creation
+cd $SCRATCHHOME
+yo oraclejet:hybrid bkapp7 --domain=com.bkqa --title=bkapp7 --template=blank --platforms=android 
+
+echo Now hybrid builds
+cd $SCRATCHHOME/bkapp7
+grunt build:dev --platform=android

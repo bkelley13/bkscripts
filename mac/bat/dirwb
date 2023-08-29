@@ -1,0 +1,12 @@
+cd $SCRATCHDIR/jet
+pwd
+git branch 
+cd $SCRATCHDIR/jetx
+pwd
+git branch 
+cd $SCRATCHDIR/jety
+pwd
+git branch 
+cd $SCRATCHDIR/jetcca
+pwd
+git branch 

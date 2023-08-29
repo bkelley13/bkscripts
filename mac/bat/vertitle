@@ -1,0 +1,14 @@
+#!/bin/bash
+if [ -d /scratch/bokelle/$1/jdeveloper/jdev/bin ]
+then
+   title "$1 `getver $1 | tail -1 | cut -c 13-`"
+   getver $1
+elif [ -d /scratch/bokelle/$1/skineditor/skineditor/bin ]
+then
+   title $1
+   getver $1
+elif [ -d /scratch/bokelle/$1/skineditor_ps3/skineditor_ps3/bin ]
+then
+   title PS3 $1
+   getver $1
+fi

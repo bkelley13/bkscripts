@@ -1,0 +1,4 @@
+# Set environment variable ORACLE_HOME to your "[MW_HOME]/oracle_common"
+
+/scratch/bokelle/bin/OPatch/opatch lsinventory -jdk /usr/local/packages/jdk14 -jre /usr/local/packages/jre14
+/scratch/bokelle/bin/OPatch/opatch apply -jdk /usr/local/packages/jdk14 -jre /usr/local/packages/jre14

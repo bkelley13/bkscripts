@@ -1,0 +1,12 @@
+#!/bin/ksh +x
+exec 4>&1
+/usr/bin/ftp jdevqa-pc1.us.oracle.com >&4 2>&4 |&
+
+print -p cd /var/www/html/bkelley
+print -p cd jet
+print -p bin
+print -p put $1
+print -p bye
+
+wait
+exit 0

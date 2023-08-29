@@ -1,0 +1,13 @@
+echo Assume you have installed correct tooling version
+cd $SCRATCHDIR
+rm -rf $SCRATCHDIR/ThemeBuilder
+rm -rf $SCRATCHDIR/JET-Theme-Builder.zip
+mkdir $SCRATCHDIR/ThemeBuilder
+wget http://den00pwq.us.oracle.com:8080/hudson/job/OJET_Build/lastSuccessfulBuild/artifact/apps/components/public_html/public_samples/nojet/JET-Theme-Builder.zip
+cd $SCRATCHDIR/ThemeBuilder
+unzip ../JET-Theme-Builder.zip
+ojet restore
+ojet add sass
+ojet create theme mytheme
+ojet serve --themes=all:all
+

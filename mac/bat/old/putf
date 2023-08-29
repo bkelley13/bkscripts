@@ -1,0 +1,11 @@
+#!/bin/ksh +x
+exec 4>&1
+/usr/bin/ftp slc10wgg.us.oracle.com >&4 2>&4 |&
+
+print -p cd pub
+print -p bin
+print -p put $1
+print -p bye
+
+wait
+exit 0

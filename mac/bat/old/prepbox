@@ -1,0 +1,3 @@
+sudo chmod -R 777 /usr/local/bin/node
+sudo chmod -R 777 /usr/local/bin/npm
+sudo chmod -R 777 /usr/local/lib/node_modules 

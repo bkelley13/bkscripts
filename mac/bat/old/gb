@@ -1,0 +1,1 @@
+grunt build-components-app:corepack --nolint --nojsdoc --nozip --noaudit

@@ -1,0 +1,19 @@
+To run the demo, you need a few servers to be up and running:
+
+(1) rest server for serving data (jet-dynamic-components/samples/nolakara/dynamic/js/data):
+
+json-server --watch db.json --port 2004
+
+(2) rest server for serving swagger (jet-dynamic-components/samples/nolakara/dynamic/js/data):
+
+json-server --watch mdatarestserver.json --port 3000
+
+(3) rest server for serving dynamic layout (jet-dynamic-components/samples/server):
+
+node server.js
+
+(4) app server:
+
+grunt serve-samples
+
+json-server --watch DFFv2.json --port 2204 --middlewares ../fix_headers.js

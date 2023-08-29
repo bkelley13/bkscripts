@@ -1,0 +1,19 @@
+#!/bin/ksh
+
+# gojetx - BKelley - svn jet and get zips
+
+OJET_HOME=$SCRATCHDIR/jet
+OJET_BUILD=$OJET_HOME/build/scripts
+OJET_GRUNT=$OJET_BUILD/grunt
+OJET_CODE=$OJET_HOME/built/code
+
+echo Updating $OJET_HOME
+cd $OJET_HOME
+echo Doing an git update on $OJET_HOME
+git pull
+
+cd $OJET_GRUNT
+grunt pull pull-app
+grunt build-public-samples-app --app=FixItFast
+grunt start-jetty
+

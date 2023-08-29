@@ -1,0 +1,6 @@
+[bokelle@slc05fav run]$ sudo /sbin/service httpd start
+Starting httpd:                                            [  OK  ]
+[bokelle@slc05fav run]$ ls /var/www/html
+trunk
+[bokelle@slc05fav run]$ 
+

@@ -1,0 +1,7 @@
+grunt serve:dev --platform=android
+grunt build-only build-dist build-oraclejet-core --turbo
+rem grunt build-components-app:corepack
+grunt update-app-corepack
+rem open http://localhost:9000/built/apps/components/public_html/jetCorePackCookbook.html
+rem grunt serve-cookbook:corepack
+grunt serve 

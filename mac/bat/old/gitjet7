@@ -1,0 +1,6 @@
+export JETHOME=$JETHOME/../jet7
+git clone https://bob.kelley%40oracle.com@alm.oraclecorp.com/uitech/s/uitech_jet_15414/scm/jet.git $JETHOME
+cd $JETHOME
+git checkout v7.x
+npm install
+grunt pull pull-app

@@ -1,0 +1,1 @@
+/scratch/bokelle/jd1/jdeveloper/jdev/bin/ojdeploy -workspace /tmp/Application1/Application1.jws -profile Application1_ViewController_webapp -project ViewController

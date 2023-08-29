@@ -1,0 +1,17 @@
+#!/bin/csh -f
+if ($#argv == 1) then
+   set string1=$1
+   set dir1=.
+else if ($#argv == 2) then
+   set string1=$1
+   set dir1=$2
+else 
+   echo "Usage: search string1 [dir1]"
+   echo "greps for string1 in all files in dir1 (or present dir)and subdirs"
+   echo "search JDEVVER"
+   echo "search JDEVVER /tmp"
+   goto done
+endif
+find $dir1 -type f -exec grep -l $string1 {} \;
+
+done:

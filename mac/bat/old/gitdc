@@ -1,0 +1,8 @@
+cd $SCRATCHHOME
+mkdir jetdc
+git clone https://bob.kelley%40oracle.com@alm.oraclecorp.com/uitech/s/uitech_jet-dynamic-components_16111/scm/jet-dynamic-components.git $SCRATCHHOME/jetdc
+cd $SCRATCHHOME/jetdc
+git checkout codereview_branch
+npm install
+grunt build
+

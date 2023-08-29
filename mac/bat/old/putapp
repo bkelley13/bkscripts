@@ -1,0 +1,10 @@
+#!/bin/sh
+if [ -z "$2" ]
+then 
+set $1 $1
+fi
+echo Zipping up $1 to $2
+zip -rv $2 $1/
+echo Putting $2.zip to slc10wgg
+putf $2.zip
+echo App stored to http://slc10wgg.us.oracle.com/bkelley/s/pub/$2.zip

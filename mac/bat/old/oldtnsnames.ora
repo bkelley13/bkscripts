@@ -1,0 +1,43 @@
+# Typically you could have two tnsnames.ora files
+# in the system, one that is set for the entire system
+# and is called the system tnsnames.ora file, and a
+# second file that is used by each user locally so that
+# he can override the definitions dictated by the system
+# tnsnames.ora file.
+
+XE =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = jdevqa-pc1.us.oracle.com)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = XE)
+    )
+  )
+
+slc00alx =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = slc00alx.us.oracle.com)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = adt1120)
+    )
+  )
+
+slc00aev =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = slc00aev.us.oracle.com)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = XE)
+    )
+  )
+
+adc00olw =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = adc00olw.us.oracle.com)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = adt1124)
+    )
+  )
+

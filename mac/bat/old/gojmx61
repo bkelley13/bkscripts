@@ -1,0 +1,7 @@
+#!/bin/ksh
+
+# gojmx - BKelley - svn jet and get zips
+npm uninstall -g generator-oraclejet
+npm uninstall -g ojet-cli
+npm uninstall -g @oracle/ojet-cli
+npm install -g "http://den00pwq.us.oracle.com:8080/hudson/view/Tooling%20Builds/job/Tooling_V6.x/lastSuccessfulBuild/artifact/oracle-ojet-cli-6.1.0.tgz"

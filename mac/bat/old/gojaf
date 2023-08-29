@@ -1,0 +1,1 @@
+  npm -g install http://slcifaa.us.oracle.com:8180/jenkins/uitech/job/OJET_Build/lastSuccessfulBuild/artifact/audit/oracle-oraclejet-audit-8.0.0.tgz

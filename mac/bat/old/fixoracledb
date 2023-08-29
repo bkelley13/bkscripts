@@ -1,0 +1,5 @@
+select username, account_status, expiry_date, lock_date from dba_users;
+alter user scott account unlock;
+alter user scott identified by tiger;
+select profile from dba_users where username = 'SCOTT'; 
+alter profile default limit FAILED_LOGIN_ATTEMPTS UNLIMITED PASSWORD_LIFE_TIME UNLIMITED;

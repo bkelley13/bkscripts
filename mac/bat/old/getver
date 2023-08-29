@@ -1,0 +1,20 @@
+#!/bin/bash +x
+if [ -f $1 ]
+then
+  echo $1 
+  grep -i BUILD_LABEL $1
+elif [ -f $SCRATCHHOME/$1/jdeveloper/jdev/bin/version.properties ]  
+then 
+  echo $SCRATCHHOME/$1
+  grep -i BUILD_LABEL $SCRATCHHOME/$1/jdeveloper/jdev/bin/version.properties
+elif [ -f $SCRATCHHOME/$1/skineditor/skineditor/bin/version.properties ]  
+then 
+  echo $SCRATCHHOME/$1 
+  grep -i BUILD_LABEL $SCRATCHHOME/$1/skineditor/skineditor/bin/version.properties
+elif [ -f $SCRATCHHOME/$1/skineditor_ps3/skineditor_ps3/bin/version.properties ]  
+then 
+  echo $SCRATCHHOME/$1 PS3
+  grep -i BUILD_LABEL $SCRATCHHOME/$1/skineditor_ps3/skineditor_ps3/bin/version.properties
+else
+  echo $SCRATCHHOME/$1
+fi

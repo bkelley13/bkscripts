@@ -1,0 +1,6 @@
+cd $SCRATCHDIR/jet
+git branch | sed -n "s/^\* //p" | xargs echo $PWD ":" 
+cd $SCRATCHDIR/jetx
+git branch | sed -n "s/^\* //p" | xargs echo $PWD ":" 
+cd $SCRATCHDIR/jetcca
+git branch | sed -n "s/^\* //p" | xargs echo $PWD ":" 

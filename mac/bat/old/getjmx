@@ -1,0 +1,5 @@
+cd $JMX
+rm -f *.zip
+wget http://den00pwq.us.oracle.com:8080/hudson/job/OJET_Code_Build/lastSuccessfulBuild/artifact/code/generator-oraclejet.zip
+unzip -o -q generator-oraclejet.zip
+npm link

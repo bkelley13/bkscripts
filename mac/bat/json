@@ -1,0 +1,13 @@
+echo Starting servers for dynamic ui tests
+cd /Users/bokelle/Sites/scratch/jetdc/dist/samples/nolakara/dynamic/js/data 
+pwd
+json-server --watch db.json --port 2004 >> ./db-json-server.log 2>&1 </dev/null &
+json-server --watch mdatarestserver.json --port 3000 >> ./md-json-server.log 2>&1 </dev/null &
+json-server --watch DFFv2.json --port 2204 --middlewares ../fix_headers.js >> ./dff-json-server.log 2>&1 </dev/null &
+cd /Users/bokelle/Sites/scratch/jetdc/dist/samples/server
+pwd
+node server.js >> ./node-server.log 2>&1 </dev/null &
+cd /Users/bokelle/Sites/scratch/jetdc
+pwd
+grunt serve-samples >> ./grunt-server.log 2>&1 </dev/null &
+echo Servers started for dynamic ui tests

@@ -1,0 +1,1 @@
+yarn install && yarn build-all && yarn Grunt build-dist && yarn Grunt build-oraclejet-preact && yarn Grunt build-oraclejet-core && say “completed”) || say “failed”

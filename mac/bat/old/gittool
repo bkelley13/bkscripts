@@ -1,0 +1,5 @@
+cd $SCRATCHHOME
+git clone https://bob.kelley%40oracle.com@alm.oraclecorp.com/uitech/s/uitech_jet-tooling/scm/ojet-cli.git tooling
+cd $SCRATCHHOME/tooling
+npm install
+

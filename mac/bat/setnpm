@@ -1,0 +1,1 @@
+npm config set @oracle:registry https://artifacthub-tip.oraclecorp.com/api/npm/jet-npm

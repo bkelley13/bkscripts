@@ -1,0 +1,7 @@
+npm config set http-proxy http://www-proxy.us.oracle.com:80
+npm config set https-proxy http://www-proxy.us.oracle.com:80
+git config --global http.proxy http://www-proxy.us.oracle.com:80
+git config --global https.proxy http://www-proxy.us.oracle.com:80
+cp ~/bat/.bowerrc ~/.bowerrc
+mkdir ~/.gradle
+cp ~/bat/gradle.properties ~/.gradle

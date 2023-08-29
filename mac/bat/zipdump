@@ -1,0 +1,9 @@
+#!/bin/bash 
+for zip in $*
+do
+  echo $zip
+  for file in $(unzip -Z -1 $zip)
+  do
+    echo "$zip:$file"
+  done
+done

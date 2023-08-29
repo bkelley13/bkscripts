@@ -1,0 +1,51 @@
+#!/bin/ksh
+
+# gojet - BKelley - update jet and rebuild
+
+OJET_HOME=$SCRATCHDIR/jet
+OJET_LOG=$OJET_HOME/getjet.log
+OJET_BUILD=$OJET_HOME/build/scripts
+OJET_BOB=$OJET_HOME/rt/apps/sandbox/bokelle
+OJET_BKTEST=bktest
+OJET_SB=$OJET_BOB/$OJET_BKTEST
+OJET_LABEL=OJET_BUILD
+OJET_LATEST=$OJET_HOME/latest
+
+echo Updating $OJET_HOME
+cd $OJET_HOME
+echo Doing an svn update on $OJET_HOME
+svn update .
+cd $OJET_BUILD
+
+echo Now refreshing $OJET_LATEST
+if [ -d $OJET_LATEST ] ; then
+   rm -rf $OJET_LATEST
+   rm -rf $OJET_LATEST/*.zip.*
+   echo Deleted old latest
+   ls $OJET_LATEST
+fi
+mkdir $OJET_LATEST
+cd $OJET_LATEST
+echo About to refresh latest..
+pwd 
+ls $OJET_LATEST
+wget -q http://slc01hih.us.oracle.com:8080/hudson/job/$OJET_LABEL/lastSuccessfulBuild/artifact/apps/oj-apps.zip
+echo Unzipping oj-apps to $OJET_LATEST
+unzip -q -o oj-apps.zip
+wget -q http://slc01hih.us.oracle.com:8080/hudson/job/$OJET_LABEL/lastSuccessfulBuild/artifact/apps/public_samples.zip
+echo Unzipping public_samples to $OJET_LATEST
+unzip -q -o public_samples.zip
+wget -q http://slc01hih.us.oracle.com:8080/hudson/job/$OJET_LABEL/lastSuccessfulBuild/artifact/code/oraclejet.zip
+echo Unzipping oraclejet to $OJET_LATEST
+unzip -q -o oraclejet.zip
+mkdir cookbook
+cd cookbook
+wget -q http://slc01hih.us.oracle.com:8080/hudson/job/$OJET_LABEL/lastSuccessfulBuild/artifact/demo/oj-components.war
+echo Unjarring oj-components.war to $OJET_LATEST/cookbook
+jar xf oj-components.war
+
+cd $OJET_SB
+echo Unzipping oraclejet to $OJET_LATEST
+unzip -q -o $OJET_LATEST/oraclejet.zip
+cp -rn $OJET_SB/* $OJET_LATEST
+

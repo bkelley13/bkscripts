@@ -1,0 +1,12 @@
+{
+"ios": {
+    "debug": {
+      "codeSigningIdentity": "iPhone Distribution: Robert Kelley (43522KDQ6U)",
+      "provisioningProfile": "0b130248-73e7-4f86-94ee-5f7f079e0df8"
+  },
+    "release": {
+      "codeSigningIdentity": "iPhone Distribution: Robert Kelley (43522KDQ6U)",
+      "provisioningProfile": "0b130248-73e7-4f86-94ee-5f7f079e0df8"
+    }
+  }
+}
